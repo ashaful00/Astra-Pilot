@@ -21,6 +21,8 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'   # 👈 Yeh line sabse zaroori hai
 
       - name: Build APK
         run: gradle assembleDebug --no-daemon
