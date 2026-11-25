@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.AshrafulAIAutopilot" parent="android:Theme.Material.Light.NoActionBar" />
-    <style name="Theme.AshrafulAIAutopilot.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@android:color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@android:drawable/ic_dialog_info</item>
-        <item name="postSplashScreenTheme">@style/Theme.AshrafulAIAutopilot</item>
-    </style>
-</resources>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="AstraPilot"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AshrafulAIAutopilot">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
